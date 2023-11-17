@@ -5,6 +5,49 @@
     box-sizing: border-box 
 }
 
-body {
-    background-color: blue;
+/* Genitore Header*/
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    background-color: rgb(69, 246, 246);
+}
+
+/* Figlio del Header*/
+.flex-container-nav {
+    display: flex;
+    min-height: 50px;
+    min-width: 1000px;
+    background-color: rgb(255, 200, 0);
+}
+
+/* Figli del contenitore Nav */
+.flex-items-link {
+    min-height: 50px;
+    border: 2px dotted black;
+}
+ 
+.small {
+    width: 25%;
+}
+
+.large {
+    width: 50%;
+}
+
+/* Gentiore Header secondario*/
+.secondary-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    background-color: rgb(0, 0, 255);
+}
+
+/* Foglio del Header secondoario */
+.flex-items-home {
+    min-height: 400px;
+    min-width: 800px;
+    background-color: rgb(255, 192, 243);
 }
