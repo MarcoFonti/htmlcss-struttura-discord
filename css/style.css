@@ -11,14 +11,14 @@
     justify-content: center;
     align-items: center;
     min-height: 80px;
-    background-color: rgb(69, 246, 246);
+    background-color: rgb(173,216,230);
 }
 
 /* Figlio del Header e padre dei LINK*/
 .flex-container-nav {
     display: flex;
     min-width: 1000px;
-    background-color: rgb(255, 200, 0);
+    background-color: rgb(218,165,32);
     border: 2px dotted rgb(0, 0, 0);
 }
 
@@ -43,14 +43,14 @@
     justify-content: center;
     align-items: center;
     min-height: 500px;
-    background-color: rgb(0, 0, 255);
+    background-color: rgb(0,0,139);
 }
 
 /* Foglio del Header secondoario */
 .flex-items-home {
     min-height: 400px;
     min-width: 800px;
-    background-color: rgb(255, 192, 243);
+    background-color: rgb(238,130,238);
     border: 2px dotted rgb(0, 0, 0);
     border-radius: 4px;
 }
@@ -78,12 +78,12 @@
 
 .large-space {
     width: 60%;
-    background-color: blue;
+    background-color: rgb(30,144,255);
 }
 
 .small-space {
     width: 40%;
-    background-color: plum;
+    background-color: rgb(255,192,203);
     border-left: 2px dotted rgb(0, 0, 0);
 }
 
@@ -92,7 +92,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(211,211,211);
     min-height: 600px;
 }
 
@@ -110,12 +110,12 @@
 
 .large-be {
     width: 60%;
-    background-color: blue;
+    background-color: rgb(30,144,255);
 }
 
 .small-be {
     width: 40%;
-    background-color: plum;
+    background-color: rgb(255,192,203);
     border-right: 2px dotted rgb(0, 0, 0);
 }
 
@@ -143,12 +143,12 @@
 
 .large-fandom {
     width: 60%;
-    background-color: blue;
+    background-color: rgb(30,144,255);
 }
 
 .small-fandom {
     width: 40%;
-    background-color: plum;
+    background-color: rgb(255,192,203);
     border-left: 2px dotted rgb(0, 0, 0);
 }
 
@@ -158,13 +158,74 @@
     align-items: center;
     justify-content: center;
     min-height: 1000px;
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(211,211,211);
 }
-
 /* Figlio diretto di .flex-container-contact */
 .flex-items-contact {
     min-height: 900px;
     min-width: 1000px;
-    background-color: rgb(0, 128, 0);
+    background-color: rgb(34,139,34);
+    border: 2px dotted rgb(0, 0, 0);
+}
+
+/* Genitore Footer */
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    background-color: rgb(35,39,42);
+}
+
+/* Figlio del Genitore Footer e Padre dei item-resources*/
+.flex-container-resources {
+    display: flex;
+    min-width: 1000px;
+    border: 2px dotted rgb(0, 0, 0);
+}
+
+/* Figli del genitore .flex-container-resources */
+.flex-items-resources {
+    min-height: 400px;
+}
+
+.large-resources {
+    width: 40%;
+    background-color: rgb(240,128,128);
+    border-right: 2px dotted rgb(0, 0, 0);
+    
+}
+
+.small-resources {
+    width: 15%;
+    background-color: rgb(32,178,170);
+    border: 2px dotted rgb(255, 255, 255);
+}
+
+/* Genitore Footer Secondario */ 
+.secondary-footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 80px;
+    background-color: rgb(35,39,42);
+    margin-top: 2px;
+}
+
+/* Figlio del foter secondario e padre dei Ites-Info */
+.flex-container-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    min-width: 1000px;
+    background-color: rgb(127,255,212);
+}
+
+/* Figli di .flex-container-info */
+.flex-items-info {
+    min-height: 40px;
+    min-width: 80px;
+    background-color: rgb(255,182,193);
     border: 2px dotted rgb(0, 0, 0);
 }
