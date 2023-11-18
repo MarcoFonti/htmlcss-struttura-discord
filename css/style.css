@@ -1,4 +1,15 @@
-/*Reset del Default*/
+/* Centralizzazione Globale */
+:root {
+    --dimensioni-contenitori: 1000px;
+    --bordi: 2px dotted rgb(0, 0, 0);
+    --colore-contenuto-principale-blu: rgb(30,144,255);
+    --colore-contenuto-principale-rosa: rgb(255,192,203);
+    --dimensioni-contenuto-principale-large: 60%; 
+    --dimensioni-contenuto-principale-small: 40%;
+    --altezza-minima-contenuto-principale: 600px;
+}
+
+/*Reset del Default */
 * {
     margin: 0;
     padding: 0;
@@ -17,9 +28,9 @@
 /* Figlio del Header e padre dei LINK*/
 .flex-container-nav {
     display: flex;
-    min-width: 1000px;
+    min-width: var(--dimensioni-contenitori);
     background-color: rgb(218,165,32);
-    border: 2px dotted rgb(0, 0, 0);
+    border: var(--bordi);
 }
 
 /* Figli del contenitore Nav */
@@ -33,8 +44,8 @@
 
 .large {
     width: 50%;
-    border-left: 2px dotted rgb(0, 0, 0);
-    border-right: 2px dotted rgb(0, 0, 0);
+    border-left: var(--bordi);
+    border-right: var(--bordi);
 }
 
 /* Gentiore Header secondario */
@@ -51,7 +62,7 @@
     min-height: 400px;
     min-width: 800px;
     background-color: rgb(238,130,238);
-    border: 2px dotted rgb(0, 0, 0);
+    border: var(--bordi);
     border-radius: 4px;
 }
 
@@ -61,14 +72,14 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(255, 255, 255);
-    min-height: 600px;
+    min-height: var(--altezza-minima-contenuto-principale);
 }
 
 /* Genitore flex Space */
 .flex-container-space{
     display: flex;
-    border: 2px dotted rgb(0, 0, 0);
-    min-width: 1000px;
+    border: var(--bordi);
+    min-width: var(--dimensioni-contenitori);
 }
 
 /* Figli del Genitore Space*/
@@ -77,14 +88,14 @@
 }
 
 .large-space {
-    width: 60%;
-    background-color: rgb(30,144,255);
+    width: var(--dimensioni-contenuto-principale-large);
+    background-color: var(--colore-contenuto-principale-blu);
 }
 
 .small-space {
-    width: 40%;
-    background-color: rgb(255,192,203);
-    border-left: 2px dotted rgb(0, 0, 0);
+    width: var(--dimensioni-contenuto-principale-small);
+    background-color: var(--colore-contenuto-principale-rosa);
+    border-left: var(--bordi);
 }
 
 /* Contenitore Be */
@@ -93,14 +104,14 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(211,211,211);
-    min-height: 600px;
+    min-height: var(--altezza-minima-contenuto-principale);
 }
 
 /* Genitore flex Be */
 .flex-container-be{
     display: flex;
-    border: 2px dotted rgb(0, 0, 0);
-    min-width: 1000px;
+    border: var(--bordi);
+    min-width: var(--dimensioni-contenitori);
 }
 
 /* Figli del Genitore Be */
@@ -109,16 +120,15 @@
 }
 
 .large-be {
-    width: 60%;
-    background-color: rgb(30,144,255);
+    width: var(--dimensioni-contenuto-principale-large);
+    background-color: var(--colore-contenuto-principale-blu);
 }
 
 .small-be {
-    width: 40%;
-    background-color: rgb(255,192,203);
+    width: var(--dimensioni-contenuto-principale-small);
+    background-color: var(--colore-contenuto-principale-rosa);
     border-right: 2px dotted rgb(0, 0, 0);
 }
-
 
 /* Contenitore Fandom */
 .container-fandom {
@@ -126,14 +136,14 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(255, 255, 255);
-    min-height: 600px;
+    min-height: var(--altezza-minima-contenuto-principale);
 }
 
 /* Genitore flex Fandom */
 .flex-container-fandom{
     display: flex;
-    border: 2px dotted rgb(0, 0, 0);
-    min-width: 1000px;
+    border: var(--bordi);
+    min-width: var(--dimensioni-contenitori);
 }
 
 /* Figli del Genitore Fandom */
@@ -142,14 +152,14 @@
 }
 
 .large-fandom {
-    width: 60%;
-    background-color: rgb(30,144,255);
+    width: var(--dimensioni-contenuto-principale-large);
+    background-color: var(--colore-contenuto-principale-blu);
 }
 
 .small-fandom {
-    width: 40%;
-    background-color: rgb(255,192,203);
-    border-left: 2px dotted rgb(0, 0, 0);
+    width: var(--dimensioni-contenuto-principale-small);
+    background-color: var(--colore-contenuto-principale-rosa);
+    border-left: var(--bordi);
 }
 
 /* Geniotre flex contact */
@@ -160,12 +170,13 @@
     min-height: 1000px;
     background-color: rgb(211,211,211);
 }
+
 /* Figlio diretto di .flex-container-contact */
 .flex-items-contact {
     min-height: 900px;
-    min-width: 1000px;
+    min-width: var(--dimensioni-contenitori);
     background-color: rgb(34,139,34);
-    border: 2px dotted rgb(0, 0, 0);
+    border: var(--bordi);
 }
 
 /* Genitore Footer */
@@ -180,8 +191,8 @@
 /* Figlio del Genitore Footer e Padre dei item-resources*/
 .flex-container-resources {
     display: flex;
-    min-width: 1000px;
-    border: 2px dotted rgb(0, 0, 0);
+    min-width: var(--dimensioni-contenitori);
+    border: var(--bordi);
 }
 
 /* Figli del genitore .flex-container-resources */
@@ -192,8 +203,7 @@
 .large-resources {
     width: 40%;
     background-color: rgb(240,128,128);
-    border-right: 2px dotted rgb(0, 0, 0);
-    
+    border-right: var(--bordi);   
 }
 
 .small-resources {
@@ -218,7 +228,7 @@
     justify-content: space-between;
     align-items: center;
     min-height: 60px;
-    min-width: 1000px;
+    min-width: var(--dimensioni-contenitori);
     background-color: rgb(127,255,212);
 }
 
@@ -227,5 +237,5 @@
     min-height: 40px;
     min-width: 80px;
     background-color: rgb(255,182,193);
-    border: 2px dotted rgb(0, 0, 0);
+    border: var(--bordi);
 }
